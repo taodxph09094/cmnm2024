@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+.rut-li-xi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .rut-li-xi-item {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .tien-ne {
+            font-size: 50px;
+            font-family: 'Zhi Mang Xing', cursive;
+        }
+
+        .anh-li-xi {
+            width: 100%;
+        }
+
+        .mo {
+            animation: shake 0.5s;
+        }
+
+        .dong {
+            animation: shake-up-down 10s
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            10% {
+                transform: translate(-5px, 5px);
+            }
+
+            20% {
+                transform: translate(-5px, -5px);
+            }
+
+            30% {
+                transform: translate(5px, 5px);
+            }
+
+            40% {
+                transform: translate(5px, -5px);
+            }
+
+            50% {
+                transform: translate(-5px, 5px);
+            }
+
+            60% {
+                transform: translate(-5px, -5px);
+            }
+
+            70% {
+                transform: translate(5px, 5px);
+            }
+
+            80% {
+                transform: translate(5px, -5px);
+            }
+
+            90% {
+                transform: translate(-5px, 5px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        @keyframes shake-up-down {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateY(-10px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateY(10px);
+            }
+        }
+    }
+}

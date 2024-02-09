@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+.layout-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100vh;
+
+        // Điện thoại di động nhỏ (ví dụ: iPhone SE)
+        @media only screen and (max-width: 480px) {
+            object-fit: cover;
+        }
+
+        // Điện thoại di động lớn (ví dụ: iPhone 12 Pro Max)
+        @media only screen and (max-width: 768px) {
+            // CSS của bạn ở đây
+            object-fit: cover;
+        }
+
+        // Máy tính bảng chân dung
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            // CSS của bạn ở đây
+            object-fit: cover;
+        }
+
+        // Máy tính bảng ngang
+        @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            // CSS của bạn ở đây
+        }
+
+        @media only screen and (min-width: 1024px) {
+            // CSS của bạn ở đây
+        }
+
+        // Màn hình trung bình (laptop thông thường và máy tính để bàn nhỏ)
+        @media only screen and (min-width: 1280px) {
+            // CSS của bạn ở đây
+        }
+
+        // Màn hình lớn (máy tính để bàn lớn)
+        @media only screen and (min-width: 1440px) {
+            // CSS của bạn ở đây
+        }
+
+        // Màn hình rất lớn (màn hình hiển thị độ phân giải cao)
+        @media only screen and (min-width: 2560px) {
+            // CSS của bạn ở đây
+        }
+    }
+
+
+}
+
+
+.phao-hoa-left {
+    position: absolute;
+    top: 25px;
+    width: 220px;
+    height: 75vh;
+    background-color: red;
+}
+
+.phao-hoa-right {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 220px;
+    height: 75vh;
+    background-color: red;
+}
+
+.custom-modal {
+    background-color: transparent !important;
+    width: 1000px !important;
+
+    .ant-modal-content {
+        max-height: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+}

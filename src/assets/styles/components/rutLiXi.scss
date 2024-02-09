@@ -16,11 +16,31 @@
             font-size: 50px;
             font-family: 'Zhi Mang Xing', cursive;
             color: #BF0D11;
-            font-weight: bold,
+            font-weight: bold;
+
+            @media only screen and (max-width: 480px) {
+                font-size: 20px
+            }
+
+            // Điện thoại di động lớn (ví dụ: iPhone 12 Pro Max)
+            @media only screen and (max-width: 768px) {
+                // CSS của bạn ở đây
+                font-size: 20px
+            }
         }
 
         .anh-li-xi {
             width: 80%;
+
+            @media only screen and (max-width: 480px) {
+                width: 200%;
+            }
+
+            // Điện thoại di động lớn (ví dụ: iPhone 12 Pro Max)
+            @media only screen and (max-width: 768px) {
+                // CSS của bạn ở đây
+                width: 200%;
+            }
         }
 
         .mo {

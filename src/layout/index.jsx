@@ -10,16 +10,6 @@ const LayoutMain = () => {
             </div>
             <img src={phaoHoa} className="phao-hoa-left" alt="" />
             <img src={phaoHoa} className="phao-hoa-right" alt="" />
-            {/* <div className="phao-hoa">
-                <div className="phao-hoa-container">
-                    <img src={phaoHoa} className="phao-hoa-left" alt="" />
-                </div>
-                <div className="phao-hoa-container-2">
-                    <img src={phaoHoa} className="phao-hoa-right" alt="" />
-                </div>
-            </div> */}
-
-
             <div
                 style={{
                     position: "absolute",

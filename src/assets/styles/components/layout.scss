@@ -64,6 +64,51 @@
     // animation: swing 1.5s infinite;
     transform-origin: top center;
     z-index: 110;
+
+    // Điện thoại di động nhỏ (ví dụ: iPhone SE)
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
+
+    // Điện thoại di động lớn (ví dụ: iPhone 12 Pro Max)
+    @media only screen and (max-width: 768px) {
+        // CSS của bạn ở đây
+        display: none;
+    }
+
+    // Máy tính bảng chân dung
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    // Máy tính bảng ngang
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        // CSS của bạn ở đây
+    }
+
+    @media only screen and (min-width: 1024px) {
+        // CSS của bạn ở đây
+    }
+
+    @media only screen and (min-width: 1024px) and (orientation: Portrait) {
+        // CSS của bạn ở đây
+        display: none;
+    }
+
+    // Màn hình trung bình (laptop thông thường và máy tính để bàn nhỏ)
+    @media only screen and (min-width: 1280px) {
+        // CSS của bạn ở đây
+    }
+
+    // Màn hình lớn (máy tính để bàn lớn)
+    @media only screen and (min-width: 1440px) {
+        // CSS của bạn ở đây
+    }
+
+    // Màn hình rất lớn (màn hình hiển thị độ phân giải cao)
+    @media only screen and (min-width: 2560px) {
+        // CSS của bạn ở đây
+    }
 }
 
 .phao-hoa-right {
@@ -75,73 +120,52 @@
     // animation: swing2 1.5s infinite;
     transform-origin: top center;
 
-}
-
-.phao-hoa {
-    .phao-hoa-container {
-        position: absolute;
-        top: 0;
-
-        .phao-hoa-left {
-            // position: absolute;
-            // top: 55px;
-            width: 360px;
-            height: 75vh;
-            // animation: swing 1.5s infinite;
-            transform-origin: top center;
-            z-index: 110;
-        }
-
-        @keyframes swing {
-            0% {
-                transform: rotate(-5deg);
-            }
-
-            50% {
-                transform: rotate(5deg);
-            }
-
-            100% {
-                transform: rotate(-5deg);
-            }
-        }
+    @media only screen and (max-width: 480px) {
+        display: none;
     }
 
-    .phao-hoa-container-2 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 110;
+    // Điện thoại di động lớn (ví dụ: iPhone 12 Pro Max)
+    @media only screen and (max-width: 768px) {
+        // CSS của bạn ở đây
+        display: none;
+    }
 
-        .phao-hoa-right {
-            // position: absolute;
-            // top: 55px;
-            // right: 0;
-            width: 360px;
-            height: 75vh;
-            // animation: swing2 1.5s infinite;
-            transform-origin: top center;
+    // Máy tính bảng chân dung
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        display: none;
+    }
 
-        }
+    // Máy tính bảng ngang
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        // CSS của bạn ở đây
 
-        @keyframes swing2 {
-            0% {
-                transform: rotate(5deg);
-            }
+    }
 
-            50% {
-                transform: rotate(-5deg);
-            }
+    @media only screen and (min-width: 1024px) {
+        // CSS của bạn ở đây
 
-            100% {
-                transform: rotate(5deg);
-            }
-        }
+    }
+
+    @media only screen and (min-width: 1024px) and (orientation: Portrait) {
+        // CSS của bạn ở đây
+        display: none;
+    }
+
+    // Màn hình trung bình (laptop thông thường và máy tính để bàn nhỏ)
+    @media only screen and (min-width: 1280px) {
+        // CSS của bạn ở đây
+    }
+
+    // Màn hình lớn (máy tính để bàn lớn)
+    @media only screen and (min-width: 1440px) {
+        // CSS của bạn ở đây
+    }
+
+    // Màn hình rất lớn (màn hình hiển thị độ phân giải cao)
+    @media only screen and (min-width: 2560px) {
+        // CSS của bạn ở đây
     }
 }
-
-
-
 
 .custom-modal {
     background-color: transparent !important;

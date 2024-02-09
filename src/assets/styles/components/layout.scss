@@ -56,23 +56,92 @@
 
 }
 
-
 .phao-hoa-left {
     position: absolute;
-    top: 25px;
-    width: 220px;
+    top: 55px;
+    width: 360px;
     height: 75vh;
-    background-color: red;
+    // animation: swing 1.5s infinite;
+    transform-origin: top center;
+    z-index: 110;
 }
 
 .phao-hoa-right {
     position: absolute;
-    top: 25px;
+    top: 55px;
     right: 0;
-    width: 220px;
+    width: 360px;
     height: 75vh;
-    background-color: red;
+    // animation: swing2 1.5s infinite;
+    transform-origin: top center;
+
 }
+
+.phao-hoa {
+    .phao-hoa-container {
+        position: absolute;
+        top: 0;
+
+        .phao-hoa-left {
+            // position: absolute;
+            // top: 55px;
+            width: 360px;
+            height: 75vh;
+            // animation: swing 1.5s infinite;
+            transform-origin: top center;
+            z-index: 110;
+        }
+
+        @keyframes swing {
+            0% {
+                transform: rotate(-5deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+
+            100% {
+                transform: rotate(-5deg);
+            }
+        }
+    }
+
+    .phao-hoa-container-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 110;
+
+        .phao-hoa-right {
+            // position: absolute;
+            // top: 55px;
+            // right: 0;
+            width: 360px;
+            height: 75vh;
+            // animation: swing2 1.5s infinite;
+            transform-origin: top center;
+
+        }
+
+        @keyframes swing2 {
+            0% {
+                transform: rotate(5deg);
+            }
+
+            50% {
+                transform: rotate(-5deg);
+            }
+
+            100% {
+                transform: rotate(5deg);
+            }
+        }
+    }
+}
+
+
+
 
 .custom-modal {
     background-color: transparent !important;

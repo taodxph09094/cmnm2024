@@ -15,7 +15,7 @@ export const li_xi = [
         tiLe: "20%",
     },
     {
-        price: "100k",
+        price: "50k",
         tiLe: "20%",
     },
     {
